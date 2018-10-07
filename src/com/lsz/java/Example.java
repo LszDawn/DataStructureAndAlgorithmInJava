@@ -5,11 +5,11 @@ public class Example {
         /*见算法2.1，2.2，2.3，2.4，2.5，2.7*/
     }
 
-    private static boolean less(Comparable v, Comparable w){
+    public static boolean less(Comparable v, Comparable w){
         return v.compareTo(w) < 0;
     }
 
-    private static void exch(Comparable[] a, int i, int j){
+    public static void exch(Comparable[] a, int i, int j){
         Comparable t = a[i];
         a[i] = a[j];
         a[j] = t;
@@ -35,7 +35,7 @@ public class Example {
 
     public static void main(String[] args) {
         //读取字符串并排序输出
-        String[] a = In.readStrings();
+        String[] a = new String[]{"a","f","e"};
         sort(a);
         assert isSorted(a);
         show(a);
